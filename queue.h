@@ -1,6 +1,14 @@
 #ifndef QUEUE_H
 #define QUEUE_H
 
-// TODO: Queue 클래스 정의 작성
+#include "linked_list.h"
+
+class Queue : public LinkedList {
+public:
+  void push(int value);
+  int pop();
+  int peek();
+  Queue& operator+=(int value);
+};
 
 #endif
